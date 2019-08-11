@@ -288,7 +288,7 @@ paket-files/
 .fake/
 
 # JetBrains Rider
-.idea/
+# .idea/
 *.sln.iml
 
 # CodeRush
@@ -328,3 +328,9 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+#
+# Some basic ignores for Python
+#
+
+python/venv/
