@@ -10,13 +10,7 @@ class ParsingTests(unittest.TestCase):
     def test_can_parse_lines(self):
         for _ in range(50):
             user = self.faker.user()
-            user_fields = vars(user)
-            stringed_user = ' | '.join((user_fields['last_name'],
-                                        user_fields['first_name'],
-                                        user_fields['gender'],
-                                        user_fields['favorite_color'],
-                                        str(user_fields['birth_date'])
-                                        ))
+            stringed_user = str(user)
             parser = LineParser()
             self.assertEqual(user, parser.parse_line(stringed_user))
 
